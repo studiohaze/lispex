@@ -5,8 +5,8 @@
 Lispex keeps a small, R7RS-shaped surface where code is data and data prints
 plainly — parens are punctuation, recursion is rhyme. Quoted forms and
 meta-programming come for free; the engine underneath is
-[CSKernel™](https://github.com/studiohaze/cskernel), the deterministic
-semantic kernel used by [Lena Code](https://github.com/studiohaze/lenacode).
+[CSKernel™](https://github.com/studiohaze/kernel), the deterministic
+semantic kernel used by [Lena Code](https://github.com/studiohaze/lena).
 
 ```scheme
 (define (fact n)
