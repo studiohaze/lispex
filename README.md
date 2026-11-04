@@ -58,9 +58,13 @@ The [CLI reference](https://www.lispex.com/v1.21/en/docs/reference/cli#connect-a
 
 Start with [First Program](https://www.lispex.com/v1.21/en/docs/getting-started) and go on to the [language lessons](https://www.lispex.com/v1.21/en/docs/learn). Terminal commands and editor setup are in the [CLI reference](https://www.lispex.com/v1.21/en/docs/reference/cli).
 
-## Topaz
+## Lispex and Topaz
 
-[Topaz](https://github.com/studiohaze/topaz) is a general-purpose programming language with typesetting built in. Its documentation and downloads are at [topaz.ooo](https://topaz.ooo).
+[Topaz](https://github.com/studiohaze/topaz) is a general-purpose programming language with typesetting built in, and Lispex is a small language for rules that Topaz programs can run. The full Topaz CLI includes the Lispex evaluator, so a Topaz app can load rules written in Lispex and run them without giving them access to files or the network. The two languages have separate release lines. Topaz documentation and downloads are at [topaz.ooo](https://topaz.ooo).
+
+## What's planned
+
+With Topaz 5.22, the public parts of Lispex will move here. That covers the language specification, the embedding contract Topaz uses and a conformance suite.
 
 ## License
 
