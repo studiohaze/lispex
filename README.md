@@ -60,7 +60,7 @@ Start with [First Program](https://www.lispex.com/v1.21/en/docs/getting-started)
 
 ## Lispex and Topaz
 
-[Topaz](https://github.com/studiohaze/topaz) is a general-purpose programming language with typesetting built in, and Lispex is a small language for rules that Topaz programs can run. The full Topaz CLI includes the Lispex evaluator, so a Topaz app can load rules written in Lispex and run them without giving them access to files or the network. The two languages have separate release lines. Topaz documentation and downloads are at [topaz.ooo](https://topaz.ooo).
+[Topaz](https://github.com/studiohaze/topaz) is a general-purpose programming language with typesetting built in, and Lispex is a safe language for business rules that Topaz programs can run. The full Topaz CLI includes the Lispex evaluator, so a Topaz app can load rules written in Lispex and run them without giving them access to files or the network. The two languages have separate release lines. Topaz documentation and downloads are at [topaz.ooo](https://topaz.ooo).
 
 ## What's planned
 
