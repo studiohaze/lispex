@@ -1,7 +1,5 @@
 # Lispex
 
-[한국어](README.ko.md)
-
 Lispex is a language for writing business rules, such as a publisher's house style. It cannot touch files or the network, so it is safe to run inside any program.
 
 Lispex releases are published here. The evaluator source is not part of this repository.
