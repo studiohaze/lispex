@@ -1,0 +1,17 @@
+Lispex Image fixed-Huffman PNG and stored-ZIP routines include a modified Rust
+adaptation of work from clavef/codeimage:
+
+  Source commit:
+  df4077b1bd1caf31f052a5a438e47b42bef8282f
+
+  Source files:
+  packages/kernel/src/png.ts
+  SHA-256 409a5703efc4e34eed5c85b47b8215d5e8315b65019aae3aa35040745d7646d1
+
+  packages/kernel/src/pageset-zip.ts
+  SHA-256 15ccf64c6185bbaa7fec8540031edefcc8d0c079b15a07fca7dfaf876d1f35b6
+
+The source repository is licensed under the Apache License, Version 2.0. A copy
+is included in licenses/APACHE-2.0-PUBLIC-ARTIFACTS.txt. The Lispex adaptation
+changes the language wire, projection, raster profile, headers, limits, error
+model, allocation discipline, APIs, and wrapper grammar.
