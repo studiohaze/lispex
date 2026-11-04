@@ -1,0 +1,11 @@
+Lispex
+Copyright 2025-2026 Studio Haze Inc.
+
+Studio Haze Inc. is the English-language name used internationally by
+스튜디오헤이즈 주식회사. Both names identify the same legal rights holder.
+
+Lispex Image fixed-Huffman PNG and stored-ZIP routines include a modified Rust
+adaptation of Apache-2.0-licensed work from clavef/codeimage commit
+df4077b1bd1caf31f052a5a438e47b42bef8282f. Exact source-file identities and
+the license copy are recorded under licenses/CODEIMAGE-NOTICE.txt and
+licenses/APACHE-2.0-PUBLIC-ARTIFACTS.txt in the source distribution.
