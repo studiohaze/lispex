@@ -1,4 +1,4 @@
-Lispex 1.21.2 - Third-party notices for native executables
+Lispex 1.21.3 - Third-party notices for native executables
 ========================================================
 
 Lispex is distributed under Apache-2.0. See LICENSE and NOTICE.
@@ -173,7 +173,7 @@ zeroize 1.9.0 -- Apache-2.0 OR MIT
 
 Lispex components
 -----------------
-lispex 1.21.2
+lispex 1.21.3
 License expression: not declared in Cargo metadata; included in
 the Lispex native distribution under Apache-2.0. See LICENSE.
 

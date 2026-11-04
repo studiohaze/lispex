@@ -13,7 +13,7 @@ Lispex releases are published here. The evaluator source is not part of this rep
 The npm package needs Node.js 18 or later.
 
 ```sh
-npm install -g lispex@1.21.2
+npm install -g lispex@1.21.3
 lispex --version
 ```
 
