@@ -64,4 +64,4 @@ Start with [First Program](https://www.lispex.com/v1.21/en/docs/getting-started)
 
 ## License
 
-[LICENSE](LICENSE) and [NOTICE](NOTICE) are the same files that ship in the `lispex` npm package.
+Lispex is released under the [Apache License 2.0](LICENSE), for both the npm package and the native executables. See [NOTICE](NOTICE). Each release also includes `THIRD-PARTY-NOTICES.txt` with the licenses of the libraries built into the executables.
