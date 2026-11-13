@@ -1,71 +1,35 @@
 # Lispex
 
-Lispex is a language for writing business rules, such as a publisher's house style. It cannot touch files or the network, so it is safe to run inside any program.
+Lispex is a language for business rules, such as a publisher's house style or a shipping fee. A rule gives the same answer for the same input, and it cannot touch files or the network, so it is safe to run inside any program.
 
-Lispex releases are published here. The evaluator source is not part of this repository.
+[Website](https://www.lispex.com) · [Playground](https://www.lispex.com/v1.21/en/play) · [Roadmap](https://www.lispex.com/v2.0/en/docs/project/roadmap) · [Download 1.21.3](https://www.lispex.com/v1.21/en/downloads) · [Topaz](https://github.com/studiohaze/topaz)
 
-[Documentation](https://www.lispex.com/v1.21/en/docs/introduction) · [Downloads](https://www.lispex.com/v1.21/en/downloads) · [Playground](https://www.lispex.com/v1.21/en/play)
+## Two lines of Lispex
 
-## Install
+| Version | Status | What it is |
+| --- | --- | --- |
+| 1.21.3 | **Stable** | The release you can install and use today. Its releases are published here. |
+| 2.0 | **Spec-first redesign** | A specification written first and an evaluator that follows it. It ships inside Topaz 6 and is validated in ATLAS together with Topaz 6. |
 
-### npm
+## Where 2.0 is going
 
-The npm package needs Node.js 18 or later.
+Lispex 2 starts from the specification. The evaluator follows it, and every change is checked against it. The [roadmap](https://www.lispex.com/v2.0/en/docs/project/roadmap) shows the required checks that pass at each stage and the known limitations that remain, generated from those checks.
 
-```sh
-npm install -g lispex@1.21.3
-lispex --version
-```
+Lispex 2 runs inside Topaz 6 as its sandboxed rule module. A Topaz program hands a rule its input and limits, and the rule can use only what the host gives it. ATLAS, the flagship program of STUDIO HAZE, validates Topaz 6 before its public release, and Lispex 2 goes through ATLAS with it and is released with it.
 
-### Native
+Alongside Topaz 6.0, the public parts of Lispex move to this repository. That covers the language specification, the embedding contract Topaz uses and a conformance suite, so anyone can check the safety promise for themselves.
 
-Native executables for Linux, macOS and Windows are attached to each release and listed on the [download page](https://www.lispex.com/v1.21/en/downloads) with their SHA-256 checksums.
-
-On macOS and Linux, this script downloads the latest release and checks its checksum.
+## Use Lispex 1.21.3 today
 
 ```sh
-curl -fsSL https://www.lispex.com/install.sh | sh
+npm install -g lispex@1.21.3          # Node.js 18 or later
+curl -fsSL https://www.lispex.com/install.sh | sh    # native, macOS and Linux
 ```
 
-On Windows, run this in PowerShell.
+On Windows, run `irm https://www.lispex.com/install.ps1 | iex` in PowerShell. Native executables for every platform and their SHA-256 checksums are on the [download page](https://www.lispex.com/v1.21/en/downloads).
 
-```powershell
-irm https://www.lispex.com/install.ps1 | iex
-```
-
-Open a new terminal and run `lispex --version`. If you have both the npm and the native version, put the one you want first on your `PATH`.
-
-## Language server and editors
-
-The native executable includes a language server. Set your editor to start this command, which talks over standard input and output.
-
-```sh
-lispex lsp
-```
-
-It reports syntax errors as you type, formats documents, lists the names a document defines, jumps to definitions, and completes and describes built-in procedures. It reads only the documents your editor sends.
-
-The [CLI reference](https://www.lispex.com/v1.21/en/docs/reference/cli#connect-an-editor) has settings for Helix and Neovim. The npm version has no language server, so `lispex lsp` there points you to the native download and exits with status 2.
-
-| Tool | What it gives you |
-| --- | --- |
-| [VS Code extension](https://github.com/studiohaze/vscode-lispex) | Syntax highlighting and a file icon. With native Lispex 1.21.2 or later it also starts `lispex lsp`. Install it from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=studiohaze.lispex) or [Open VSX](https://open-vsx.org/extension/studiohaze/lispex). |
-| [Tree-sitter](https://github.com/studiohaze/tree-sitter-lispex) | A grammar and editor queries for `.lspx` files. |
-| [highlight.js](https://github.com/studiohaze/highlightjs-lispex) and [Prism](https://github.com/studiohaze/prism-studiohaze) | Syntax highlighting on web pages. |
-| [Pygments](https://github.com/studiohaze/pygments-topaz-lispex) and [Rouge](https://github.com/studiohaze/rouge-studiohaze) | Syntax highlighting in documentation tools. |
-
-## Learn Lispex
-
-Start with [First Program](https://www.lispex.com/v1.21/en/docs/getting-started) and go on to the [language lessons](https://www.lispex.com/v1.21/en/docs/learn). Terminal commands and editor setup are in the [CLI reference](https://www.lispex.com/v1.21/en/docs/reference/cli).
-
-## Lispex and Topaz
-
-[Topaz](https://github.com/studiohaze/topaz) is a general-purpose programming language with typesetting built in, and Lispex is a safe language for business rules that Topaz programs can run. The full Topaz CLI includes the Lispex evaluator, so a Topaz app can load rules written in Lispex and run them without giving them access to files or the network. The two languages have separate release lines. Topaz documentation and downloads are at [topaz.ooo](https://topaz.ooo).
-
-## What's planned
-
-With Topaz 5.22, the public parts of Lispex will move here. That covers the language specification, the embedding contract Topaz uses and a conformance suite.
+Start with [First Program](https://www.lispex.com/v1.21/en/docs/getting-started). The native executable includes a language server (`lispex lsp`), and the [CLI reference](https://www.lispex.com/v1.21/en/docs/reference/cli#connect-an-editor) shows how to connect an editor. Syntax highlighting is available for [VS Code](https://github.com/studiohaze/vscode-lispex), [Tree-sitter](https://github.com/studiohaze/tree-sitter-lispex), [highlight.js](https://github.com/studiohaze/highlightjs-lispex), [Prism](https://github.com/studiohaze/prism-studiohaze), [Pygments](https://github.com/studiohaze/pygments-topaz-lispex) and [Rouge](https://github.com/studiohaze/rouge-studiohaze).
 
 ## License
 
-Lispex is released under the [Apache License 2.0](LICENSE), for both the npm package and the native executables. See [NOTICE](NOTICE). Each release also includes `THIRD-PARTY-NOTICES.txt` with the licenses of the libraries built into the executables.
+Lispex is released under the [Apache License 2.0](LICENSE), for both the npm package and the native executables. See [NOTICE](NOTICE). Each release also includes `THIRD-PARTY-NOTICES.txt` with the licenses of the libraries built into the executables. The evaluator source is not part of this repository.
