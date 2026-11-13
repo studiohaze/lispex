@@ -9,13 +9,13 @@ Lispex is a language for business rules, such as a publisher's house style or a 
 | Version | Status | What it is |
 | --- | --- | --- |
 | 1.21.3 | **Stable** | The release you can install and use today. Its releases are published here. |
-| 2.0 | **Spec-first redesign** | A specification written first and an evaluator that follows it. It ships inside Topaz 6 and is validated in ATLAS together with Topaz 6. |
+| 2.0 | **Spec-first redesign** | A specification written first and an evaluator that follows it. It runs inside Topaz 6 and is validated in ATLAS together with Topaz 6. |
 
 ## Where 2.0 is going
 
 Lispex 2 starts from the specification. The evaluator follows it, and every change is checked against it. The [roadmap](https://www.lispex.com/v2.0/en/docs/project/roadmap) shows the required checks that pass at each stage and the known limitations that remain, generated from those checks.
 
-Lispex 2 runs inside Topaz 6 as its sandboxed rule module. A Topaz program hands a rule its input and limits, and the rule can use only what the host gives it. ATLAS, the flagship program of STUDIO HAZE, validates Topaz 6 before its public release, and Lispex 2 goes through ATLAS with it and is released with it.
+Lispex 2 runs inside Topaz 6 as its sandboxed rule module. A Topaz program hands a rule its input and limits, and the rule can use only what the host gives it. ATLAS, the flagship program of STUDIO HAZE, validates Topaz 6 before its public release, and Lispex 2 goes through ATLAS with it. Lispex 2 itself ships once every stage of its specification passes, without waiting for Topaz 6.
 
 Alongside Topaz 6.0, the public parts of Lispex move to this repository. That covers the language specification, the embedding contract Topaz uses and a conformance suite, so anyone can check the safety promise for themselves.
 
